@@ -15,3 +15,9 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+git status
+hebah114:~/workspace/DevcampPortfolio git status
+hebah114:~/workspace/DevcampPortfolio # I don’t want to show my secrets
+/config/secrets.yml
+# I don’t want to show my secrets
+/config/secrets.yml
