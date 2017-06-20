@@ -23,19 +23,6 @@ class BlogsController < ApplicationController
 
   # POST /blogs
   # POST /blogs.json
-  def create
-    @blog = Blog.new(blog_params)
-
-    respond_to do |format|
-      if @blog.save
-        format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
-        format.json { render :show, status: :created, location: @blog }
-      else
-        format.html { render :new }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
-      end
-    end
-  end
 
   # PATCH/PUT /blogs/1
   # PATCH/PUT /blogs/1.json
