@@ -1,13 +1,3 @@
 class Skill < ApplicationRecord
-endclass PagesController < ApplicationController
-  def home
-    @posts = Blog.all
-    @skills = Skill.all
-  end
-
-  def about
-  end
-
-  def contact
-  end
+  validates_presence_of :title, :percent_utilized
 end
