@@ -1,16 +1,13 @@
-<div class="col-sm-8 blog-main">
+<%= image_tag @portfolio_item.main_image %>
 
-  <h2><%= @blog.title %></h2>
+<h1><%= @portfolio_item.title %></h1>
 
-  <%= render 'blog_breadcrumb' %>
+<em><%= @portfolio_item.subtitle %></em>
 
-  <div class="blog-body">
-    <%= markdown @blog.body %>
-  </div>
+<p><%= @portfolio_item.body %></p>
 
-  <%= render 'comments/comment_form' %>
+<h2>Technologies Used: </h2>
 
-  <div id="comments" data-blog-id="<%= @blog.id %>">
-    <%= render @blog.comments %>
-  </div>
-</div>
+<% @portfolio_item.technologies.each do |t| %>
+<p><%= t.name %></p>
+<% end %>
