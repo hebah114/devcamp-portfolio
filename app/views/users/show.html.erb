@@ -1,14 +1,17 @@
-<p id="notice"><%= notice %></p>
+<%= image_tag @portfolio_item.main_image %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+<h1><%= @portfolio_item.title %></h1>
 
-<p>
-  <strong>Slug:</strong>
-  <%= @user.slug %>
-</p>
+<em><%= @portfolio_item.subtitle %></em>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<p><%= @portfolio_item.body %></p>
+
+<h2>Technologies Used</h2>
+
+<% @portfolio_item.technologies.each do |t| %>
+<p><%= t.name %></p>
+<% end %>
+
+<hr>
+
+<%= Portfolio.find|params[:id].technologies %>

@@ -1,2 +1,16 @@
-<h1>Pages#home</h1>
+<h1>Hi, <%= current_user.first_name if current_user %></h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+<h1>Blog Posts</h1>
+<%= @posts.inspect %>
+
+<h1>Skills</h1>
+<%= @skills.inspect %>
+
+<hr>
+
+<%= content_tag :h1, class: "my-special-class" do %> 
+Hi, I'm in a heading
+<% end %>
+
+<p class= ""my-special-class""> Hi, I'm in a paragraph tag</p>
