@@ -1,4 +1,4 @@
-module DefaultPageContent
+module DefaultPageConcern
   extend ActiveSupport::Concern
 
   included do

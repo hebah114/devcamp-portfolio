@@ -14,7 +14,7 @@ class BlogsController < ApplicationController
     @page_title = @blog.title
     @seo_keywords = @blog.body
   end
-
+ 
   # GET /blogs/new
   def new
     @blog = Blog.new
