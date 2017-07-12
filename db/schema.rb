@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170711161653) do
+=======
+
+ActiveRecord::Schema.define(version: 20170705172631) do
+>>>>>>> e30ea0edeb52d6da7fb66e58ebfae9faa25a4f55
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -70,7 +75,7 @@ ActiveRecord::Schema.define(version: 20170711161653) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
+  
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -89,6 +94,25 @@ ActiveRecord::Schema.define(version: 20170711161653) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+<<<<<<< HEAD
   add_foreign_key "blogs", "topics"
   add_foreign_key "technologies", "portfolios"
+=======
+  create_table "views", force: :cascade do |t|
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet     "current_sign_in_ip"
+    t.inet     "last_sign_in_ip"
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+    t.index ["email"], name: "index_views_on_email", unique: true, using: :btree
+    t.index ["reset_password_token"], name: "index_views_on_reset_password_token", unique: true, using: :btree
+  end
+>>>>>>> e30ea0edeb52d6da7fb66e58ebfae9faa25a4f55
 end
