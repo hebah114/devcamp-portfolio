@@ -38,6 +38,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'pry-byebug'
 end
 
 group :development do
@@ -54,7 +55,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.2'
 
+gem 'bootstrap', '~> 4.0.0.alpha6'
 
-gem 'bootstrap', '~> 4.0.0.alpha6' 
-
-gem 'hebah_view_tool', '~> 0.1.0'
+gem 'devcamp_view_tool', '~> 0.1.0'
+gem 'petergate', '~> 1.7'
+ 
