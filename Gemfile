@@ -57,4 +57,4 @@ gem 'devise', '~> 4.2'
 
 gem 'bootstrap', '~> 4.0.0.alpha6' 
 
-gem 'hebah_view_tool', git: 'https://github.com/hebah114/hebah_view_tool' 
+gem 'hebah_view_tool', '~> 0.1.0'
