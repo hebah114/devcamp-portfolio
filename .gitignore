@@ -24,3 +24,4 @@ hebah114:~/workspace/DevcampPortfolio # I don’t want to show my secrets
 git status
 # I don't want to show my secrets
 /config/secrets.yml
+.env 
