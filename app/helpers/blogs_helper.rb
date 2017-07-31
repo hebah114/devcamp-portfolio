@@ -19,4 +19,3 @@ module BlogsHelper
     markdown_to_html.render(text).html_safe
   end
 end
-end
